@@ -68,7 +68,6 @@ h2 {
 /* Header */
 .header {
     margin-top: 24px;
-    margin-bottom: 24px;
 }
 
 .header-menu {
@@ -96,13 +95,38 @@ h2 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #212121;
+    position: relative;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.link-nav:hover::after {
+content: " ";
+position: absolute;
+background-color: #2196F3;
+top: 47px;
+border-radius: 4px;
+left: 0;
+height: 4px;
+width: 100%;
+}
+
+.link-nav.active::after {
+    content: " ";
+    position: absolute;
+    background-color: #2196F3;
+    top: 47px;
+    border-radius: 4px;
+    left: 0;
+    height: 4px;
+    width: 100%;
+}
 .link:hover,
 .link:focus {
     color: #2196F3;
     cursor: pointer;
-    transition-property: background-color;
+    transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -361,8 +385,6 @@ h2 {
     display: flex;
     gap: 30px;
 }
-
-.client-border {}
 
 .clients-link {
     display: flex;
