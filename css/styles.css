@@ -262,6 +262,7 @@ h2 {
 .img-margin {
     display: flex;
     justify-content: space-between;
+    line-height: 0;
 }
 
 .section-title {
@@ -286,7 +287,7 @@ h2 {
 
     position: absolute;
 
-    bottom: 0;
+    bottom: 0px;
     left: 0;
 
     width: 100%;
