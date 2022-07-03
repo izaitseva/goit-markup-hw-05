@@ -260,6 +260,7 @@ h2 {
 /* Перелік послуг-фото */
 
 .img-margin {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -272,9 +273,39 @@ h2 {
     margin-top: 0;
 }
 
-.img-margin {
-    display: flex;
+/* overflow photo */
 
+.photo-back {
+    position: relative;
+}
+
+.photo-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    bottom: 0;
+    left: 0;
+
+    width: 100%;
+    height: 70px;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.photo-desc {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Команда */
@@ -634,7 +665,7 @@ h2 {
     transform: translateY(0);
 }
 
-.portf-overlay p{
+.portf-overlay p {
     display: flex;
     color: rgba(255, 255, 255, 1);
     font-weight: 400;
@@ -643,7 +674,7 @@ h2 {
     line-height: 1.56;
 
     letter-spacing: 0.03em;
-} 
+}
 
 .portf-description {
     display: block;
