@@ -595,6 +595,7 @@ h2 {
 .nav-decor {
     border-bottom: 1px solid #EEEEEE;
     padding-bottom: 24px;
+    padding-top: 0;
 }
 
 .nav-portf {
