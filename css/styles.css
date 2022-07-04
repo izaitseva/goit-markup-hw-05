@@ -123,13 +123,16 @@ h2 {
     width: 100%;
 }
 
+.link {
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link:hover,
 .link:focus {
     color: #2196F3;
     cursor: pointer;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-header {
@@ -433,6 +436,10 @@ h2 {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-svg {
@@ -442,10 +449,6 @@ h2 {
 .social-media-link:hover,
 .social-media-link:focus {
     background-color: #2196F3;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link:hover .social-svg,
@@ -481,6 +484,10 @@ h2 {
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 5px;
+
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-svg {
@@ -490,10 +497,6 @@ h2 {
 .clients-link:hover,
 .clients-link:focus {
     border-color: #2196F3;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-flex a:focus {
@@ -503,10 +506,6 @@ h2 {
 .clients-link:hover .clients-svg,
 .clients-link:focus .clients-svg {
     fill: #2196F3;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Нижня частина */
@@ -570,15 +569,15 @@ h2 {
     width: 44px;
     height: 44px;
     border-radius: 50%;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social:hover,
 .footer-social:focus {
     background-color: #2196F3;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -626,6 +625,10 @@ h2 {
     border-radius: 4px;
     line-height: 1.62;
     letter-spacing: 0.03em;
+
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .list button:hover,
@@ -637,10 +640,6 @@ h2 {
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
-
-    transition-property: background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* Portfolio list */
@@ -658,13 +657,15 @@ h2 {
     flex-wrap: wrap;
 }
 
-.portfolio-list li:hover {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    cursor: pointer;
-
+.portfolio-list li {
     transition-property: box-shadow, cursor;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-list li:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
 }
 
 .portfolio-decor {
