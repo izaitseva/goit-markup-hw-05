@@ -95,13 +95,16 @@ h2 {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #212121;
+
     position: relative;
 
+    transition-property: color, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link-nav:hover::after {
+.link-nav:hover::after,
+.link-nav:focus::after {
     content: " ";
     position: absolute;
     background-color: #2196F3;
